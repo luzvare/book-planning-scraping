@@ -7,7 +7,7 @@ In this repository is the source code to the web-scraping for amazon. The main g
 
 ## How to perform the web scraping
 
-We have three main python programs. The order is as follows.
+We have three main python programs. It is necessary to have python installed in our computer. The order is as follows.
 
 ### get-books-pages.py
 
