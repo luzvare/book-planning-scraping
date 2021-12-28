@@ -86,7 +86,7 @@ def scrape(url):
     book_info = book_name + ',' + book_author + ',' + book_isbn_10 + ',' + book_isbn_13 + ',' + book_editorial + ',' + book_pages + ',' + book_image + '\n'
     return book_info
     
-with open("new_search_results.txt",'r') as urllist, open('book_data.csv', 'a') as outputfile:
+with open("new_search_results.txt",'r') as urllist, open('book_data.csv', 'a', encoding='utf-8') as outputfile:
     headers = '"Nombre", "Autor", "ISBN-10", "ISBN-13", "Editorial", "Páginas", "Imagen"\n'
     outputfile.write(headers)
     for url in urllist.read().splitlines():
